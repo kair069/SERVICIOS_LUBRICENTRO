@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>SERVICIOS PARA AUTOS</title>
+</head>
+<body>
+    <section class="contenido">
+        <h1>Servicios que ofrece el Lubricentro Alexandro</h1>
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <!-- Replicación de Servicios 1-8 -->
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmfGk0llHUHKkh2K17XqAsQ-MTr0ATWhwfg&usqp=CAU" alt="Cambio de Aceite">
+                    </div>
+                    <p class="descripcion">Cambio de Aceite</p>
+                    <span class="precio">$ 30</span>
+                </div>
+
+                <!-- Replicar para los servicios restantes... -->
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDiuNJt53v25gL9GgQ9SWg-O1A4vDNfoAQMw&usqp=CAU" alt="Cambio de Filtro">
+                    </div>
+                    <p class="descripcion">Cambio de Filtro</p>
+                    <span class="precio">$ 40</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.ytimg.com/vi/ugqd92RhATk/hqdefault.jpg" alt="Lavado de Motor">
+                    </div>
+                    <p class="descripcion">Lavado de Motor</p>
+                    <span class="precio">$ 50</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_hTEHoNj1NWCK5MVudtQCJ86YtnFr4CqIw&usqp=CAU" alt="Alineación y Balanceo">
+                    </div>
+                    <p class="descripcion">Alineación y Balanceo</p>
+                    <span class="precio">$ 60</span>
+                </div>
+            </div>
+            <div class="fila">
+                <!-- Replicar para los servicios restantes... -->
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvK7yP76W490_68zb8qvs6TLpZgAfh0N-cBg&usqp=CAU" alt="Cambio de Batería">
+                    </div>
+                    <p class="descripcion">Cambio de Batería</p>
+                    <span class="precio">$ 80</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://imagenes.20minutos.es/files/image_640_360/uploads/imagenes/2023/06/21/aceite.jpeg" alt="Reparación de Frenos">
+                    </div>
+                    <p class="descripcion">Reparación de Frenos</p>
+                    <span class="precio">$ 100</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://f.fcdn.app/imgs/418645/www.cymaco.com.uy/cym/f97c/original/blog/547/760x0/mecanicos-certificados-en-nuestr.jpg" alt="Cambio de Neumáticos">
+                    </div>
+                    <p class="descripcion">Cambio de Neumáticos</p>
+                    <span class="precio">$ 120</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSk8LfWi8BfxiSMpNT1aPDIMh9aZzXKwi84Q&usqp=CAU" alt="Diagnóstico de Motor">
+                    </div>
+                    <p class="descripcion">Diagnóstico de Motor</p>
+                    <span class="precio">$ 80</span>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="https://f.fcdn.app/imgs/418645/www.cymaco.com.uy/cym/f97c/original/blog/547/760x0/mecanicos-certificados-en-nuestr.jpg" alt="" id="img">
+                <h2 id="modelo">Cambio de Aceite</h2>
+                <p id="descripcion">Descripción del servicio de cambio de aceite para tu vehículo.</p>
+                <span class="precio" id="precio">$ 30</span>
+                <div class="fila">
+                    <button>AGENDAR SERVICIO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
